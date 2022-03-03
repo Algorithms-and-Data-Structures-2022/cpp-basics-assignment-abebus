@@ -9,9 +9,8 @@ namespace assignment {
   int squared_diff(int left, int right) {
 
     // Write your code here ...
-      return pow(left - right);
 
-    return 0;
+    return pow(left - right);
   }
 
   // Task 2
