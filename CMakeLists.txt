@@ -22,7 +22,7 @@ option(ENABLE_MEMCHECK "Configure project for memory checking." OFF)
 cmake_print_variables(CMAKE_BUILD_TYPE BUILD_TESTS ENABLE_COMPILER_WARNINGS ENABLE_MEMCHECK)
 
 # Library
-add_library(${PROJECT_NAME} STATIC include/assignment/code.hpp)
+add_library(${PROJECT_NAME} STATIC include/assignment/code.hpp src/dumpster.cpp)
 
 if (EXISTS ${PROJECT_SOURCE_DIR}/src/code_solution.cpp)
     message(STATUS "Using solution code: yes")
