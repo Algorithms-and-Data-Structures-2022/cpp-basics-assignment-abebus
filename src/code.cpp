@@ -10,7 +10,7 @@ namespace assignment {
 
     // Write your code here ...
 
-    return pow(left - right);
+    return (left - right) * (left - right);
   }
 
   // Task 2
