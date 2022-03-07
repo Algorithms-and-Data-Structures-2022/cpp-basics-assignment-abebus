@@ -2,6 +2,7 @@
 
 #include <iostream>   // cout, printf
 #include <algorithm>  // fill, copy
+#include <math.h>
 
 namespace assignment {
 
@@ -17,16 +18,28 @@ namespace assignment {
   bool check_bit(int mask, int bit_pos) {
 
     // Write your code here ...
-
-    return false;
+    if (mask > 0 and bit_pos > 0) {
+        return bool (mask & int (pow(2, bit_pos)));
+    }
+    else {
+          return false;
+      }
   }
 
   // Task 3
   int max3(int left, int middle, int right) {
 
     // Write your code here ...
+    if (left > middle and left > right) {
+        return left;
+    }
+    if (middle > left and middle > right) {
+        return middle;
+    }
+    if (right > left and right > middle) {
+        return right;
+    }
 
-    return 0;
   }
 
   // Task 4
