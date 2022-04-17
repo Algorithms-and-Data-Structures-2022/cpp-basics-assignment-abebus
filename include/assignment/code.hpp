@@ -10,7 +10,7 @@ namespace assignment {
 
   int max3(int left, int middle, int right);
 
-  void swap_args(int* left, int* right);
+  int swap_args(int* left, int* right);
 
   int arr_sum(int* arr, int length);
 
